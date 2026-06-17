@@ -1,0 +1,54 @@
+name: pet_tender
+description: "PeTender - Pet Care Job Board App"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.7.0
+  # backendless_sdk: ^7.0.0
+  google_sign_in: ^6.2.1
+  google_maps_flutter: ^2.7.0
+  geolocator: ^11.0.0
+  image_picker: ^1.1.2
+  cached_network_image: ^3.3.1
+  flutter_cache_manager: ^3.4.1     # SettingsScreen "clear cache" (already transitive via cached_network_image)
+  flutter_dotenv: ^5.1.0
+  shared_preferences: ^2.3.2
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4                   # used directly in main.dart (was only transitive)
+  connectivity_plus: ^6.0.5
+  provider: ^6.1.2
+  lottie: ^2.7.0
+  shimmer: ^3.0.0
+  flutter_animate: ^4.5.0
+  intl: ^0.19.0
+  url_launcher: ^6.3.1 
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  - assets/images/      # App logo, placeholder images
+  - assets/lottie/      # Lottie .json files (empty state, splash, success)
+  - assets/icons/       # Custom SVG/PNG icons
+  - .env
+
+  #fonts:
+  #   - family: Nunito
+  #     fonts:
+  #       - asset: assets/fonts/Nunito-Regular.ttf
+ #        - asset: assets/fonts/Nunito-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Nunito-Bold.ttf
+   #        weight: 700

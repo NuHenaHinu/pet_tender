@@ -1,0 +1,87 @@
+.env
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# andriod related
+*.iml
+*.lock
+gradle-wrapper.jar
+/.gradle
+/captures/
+fradlew
+/gradlew.bat
+/local.properties
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ── Secrets / sensitive — NEVER commit ──────────────────────────────────────
+# Environment variables (keep .env.example tracked as the template)
+.env
+.env.*
+!.env.example
+
+# Google OAuth client secret (downloaded from Google Cloud Console)
+client_secret_*.json
+*client_secret*.json
+
+# Firebase / Google services configs (contain API keys)
+google-services.json
+GoogleService-Info.plist
+
+# Android signing
+*.jks
+*.keystore
+key.properties
+**/key.properties
+
+# Apple certificates / provisioning / keys
+*.pem
+*.p12
+*.p8
+*.cer
+*.mobileprovision
+
+# Machine-specific (root-anchored rule above misses the android/ copy)
+android/local.properties
